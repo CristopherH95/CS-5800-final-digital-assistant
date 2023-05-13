@@ -1,6 +1,8 @@
 package assistant.interfaces;
 
+import java.util.regex.Pattern;
+
 public interface CommandReceiver {
-    void setParameter(String name, String value);
-    void execute();
+    void invoke(String input);
+    Pattern getInputPattern();
 }
