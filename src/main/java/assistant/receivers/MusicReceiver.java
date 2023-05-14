@@ -8,6 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class MusicReceiver implements CommandReceiver {
+    // Matches strings like: play yesterday by artist the beatles
     private static final Pattern musicPattern = Pattern.compile(
         "(?:play\\s+)(?<song>.*?)(?:by\\s+artist\\s+)(?<artist>.*)",
         Pattern.CASE_INSENSITIVE
