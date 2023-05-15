@@ -1,0 +1,8 @@
+May 14, 2023 8:13:29 PM assistant.logging.AssistantCommandLogger logMessage
+INFO: Executing command with input 'compose email hello! to email address abc@gmail.com with subject hello'
+May 14, 2023 8:13:29 PM assistant.logging.AssistantCommandLogger logMessage
+INFO: Executing command with input 'play yesterday by artist the beatles'
+May 14, 2023 8:13:29 PM assistant.logging.AssistantCommandLogger logMessage
+INFO: Executing command with input 'call 123-123-1234'
+May 14, 2023 8:13:29 PM assistant.logging.AssistantCommandLogger logMessage
+INFO: Executing command with input 'set reminder to turn off oven triggering in 2 hours'
