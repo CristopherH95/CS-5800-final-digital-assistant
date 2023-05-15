@@ -8,7 +8,7 @@ import java.util.logging.Level;
 
 public abstract class CommandTemplate implements AssistantCommand {
     protected final String input;
-    private final AssistantCommandLogger logger;
+    protected final AssistantCommandLogger logger;
 
     public CommandTemplate(String input) {
         this.input = input;
@@ -25,14 +25,11 @@ public abstract class CommandTemplate implements AssistantCommand {
         invokeReceiver(input);
     }
 
-    protected boolean validateInput(String input) {
-        return true;
-    }
-
     protected String craftLogMessage(String input) {
         return String.format("Executing command with input '%s'", input);
     }
 
+    protected abstract boolean validateInput(String input);
     protected abstract void notifyUser(String input);
     protected abstract void invokeReceiver(String input);
 }
