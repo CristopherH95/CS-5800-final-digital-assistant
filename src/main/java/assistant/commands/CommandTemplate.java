@@ -7,7 +7,7 @@ import assistant.logging.AssistantCommandLogger;
 import java.util.logging.Level;
 
 public abstract class CommandTemplate implements AssistantCommand {
-    private final String input;
+    protected final String input;
     private final AssistantCommandLogger logger;
 
     public CommandTemplate(String input) {
